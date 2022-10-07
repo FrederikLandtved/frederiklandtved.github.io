@@ -1,5 +1,5 @@
 var currentImage = 0;
-var images = ["assets/img0.PNG", "assets/img1.PNG", "assets/img2.PNG"];
+var images = [{alt: "new york skyline", url: "assets/img0.PNG"}, {alt: "los angeles skyline", url: "assets/img1.PNG"}, {alt: "washington skyline", url: "assets/img2.PNG"}];
 
 
 (function() {
@@ -29,7 +29,8 @@ var images = ["assets/img0.PNG", "assets/img1.PNG", "assets/img2.PNG"];
  function refreshImage() {
     var imgs = document.getElementsByClassName('image-src');
     var imgArray = Array.from(imgs);
-    return imgArray[0].src = images[currentImage];
+    imgArray[0].alt = images[currentImage].alt;
+    return imgArray[0].src = images[currentImage].url;
  }
 
 
