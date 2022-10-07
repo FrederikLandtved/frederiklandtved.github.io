@@ -1,5 +1,5 @@
 var currentImage = 0;
-var images = ["assets/img0.png", "assets/img1.png", "assets/img2.png"];
+var images = ["assets/img0.PNG", "assets/img1.PNG", "assets/img2.PNG"];
 
 
 (function() {
